@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoR_Santupea92</title>
+    <link rel="shortcut icon" src="../assets/img/LOGO-Santupea.png" alt="imagen favicom">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body id="bodyGrid__Contacto">
+    <!--Comienzo Header-->
+    <header class="grid__header">
+        <a href="../index.html"><img src="../assets/img/SANTUPEA_HEADER_2.png" alt="logo header" width="100%"></a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="acerca-de-mi.html">Acerca de mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="patreon.html">Patreon</a></li>
+                <li><a href="torneos.html">Torneos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Cierre Header-->
+
+    <!--Comienzo Section de Contacto-->
+    <section id="grid__section__contacto">
+        <form action="#" method="post" enctype="text/plain">
+            <fieldset>
+                    <legend id="form_legend">Formulario de Contacto</legend>
+                        <div>
+                            <label for="nombre-form" class="BoxModelForm">Nombre:</label>
+                            <input type="text" name="nombre-form" id="nombre-form" placeholder="Escribe tu nombre" class="BoxModelForm">
+                        </div>
+                        <div>
+                            <label for="email-form" class="BoxModelForm">Email:</label>
+                            <input type="email" name="email-form" id="email-form" required placeholder="Escribe tu email" class="BoxModelForm">
+                        </div>    
+                        <div>
+                            <label for="region-favorita" class="BoxModelForm">Región Favorita:</label>
+                                <select name="region-favorita" class="BoxModelForm">
+                                    <option disabled value="">Elige Una Opción</option>
+                                    <option value="Bandle">Bandle</option>
+                                    <option value="Bilgewater">Bilgewater</option>
+                                    <option value="Demacia">Demacia</option>
+                                    <option value="Freljord">Freljord</option>
+                                    <option value="Ionia">Ionia</option>
+                                    <option value="Noxus">Noxus</option>
+                                    <option value="P&Z">P&Z</option>
+                                    <option value="Shadow-Isles">Shadow Isles</option>
+                                    <option value="Shurima">Shurima</option>
+                                    <option value="Targon">Targon</option>
+                                </select>
+                        </div>
+                        <div>
+                            <label for="edad" class="BoxModelForm">Edad:</label>
+                                <input type="radio" name="edad" value="18-25" class="BoxModelForm" required>18 a 25 años
+                                <input type="radio" name="edad" value="26-35" class="BoxModelForm" required>26 a 35 años
+                                <input type="radio" name="edad" value="mas-35" class="BoxModelForm" required>+35 años
+                        </div>
+                        <div>
+                            <label for="referencia" class="BoxModelForm">¿Cómo me conociste?</label>
+                                <input type="checkbox" name="referencia" value="google" class="BoxModelForm">Google.
+                                <input type="checkbox" name="referencia" value="redes" class="BoxModelForm">Por mi trabajo en Redes.
+                                <input type="checkbox" name="referencia" value="comentario" class="BoxModelForm">Te hablaron de mí.                 
+                        </div>    
+                        <div>    
+                            <label for="mensaje" class="BoxModelForm">Mensaje:</label>
+                            <textarea rows="5" cols="30" required placeholder="Escribe tu mensaje." class="BoxModelForm" id="mensaje-form"></textarea> 
+                        </div>    
+                        <div>    
+                            <input type="submit" class="BoxModelForm botones">
+                            <input type="reset" class="BoxModelForm botones">
+                        </div>
+                </fieldset>
+        </form>
+    </section>
+    <!--Cierre Section de Contacto-->
+
+    <!--Comienzo Footer-->
+    <footer class="grid__footer">
+        <a href="../index.html"><img src="../assets/img/LOGO-Santupea.png" alt="imagen logo" class="footerLogo"></a>
+        <div>
+            <a href="https://www.linkedin.com/in/lorsantupea92/"><h3>Desarrollador Web: LoR_Santupea92</h3></a>
+        </div>
+        <ul>
+            <a href="https://www.facebook.com/lorsantupea92" target="_blank"><li><img src="../assets/img/Facebook.png" alt="logo Facebook" class="footer__logo"></li></a>
+            <a href="https://twitter.com/LoR_Santupea92" target="_blank"><li><img src="../assets/img/Twitter.png" alt="logo Twitter" class="footer__logo"></li></a>
+            <a href="https://www.youtube.com/channel/UC1zb8mBeRMo9LxN8p9EdKww" target="_blank"><li><img src="../assets/img/YouTube.png" alt="logo YouTube" class="footer__logo"></li></a>
+            <a href="https://www.twitch.tv/lor_santupea92" target="_blank"><li><img src="../assets/img/Twitch.png" alt="logo Twitch" class="footer__logo"></li></a>
+        </ul>
+    </footer>
+    <!--Cierre Footer-->
+</body>
+</html>
