@@ -772,6 +772,8 @@ footer li {
 
     body nav ul li:hover {
         background-color: #c8f1ff;
+        transform: scale(1.5);
+        transition-duration: 0.2s;
     }
     
     body nav ul li:hover a {
@@ -788,6 +790,11 @@ footer li {
         font-size: 1.8rem;
         font-weight: 500;
         margin: 10px;
+    }
+
+    .articleNoticia:hover {
+        transform: scale(1.02);
+        transition-duration: 0.2s;
     }
 
     /* CSS +1024 ACERCA DE MI */
@@ -898,6 +905,8 @@ footer li {
     .botones:hover {
         background-color: #c8f1ff;
         color: #1e1b50;
+        transform: scale(1.2);
+        transition-duration: 0.3s;
     }
 
     /* CSS +1024 PATREON */
@@ -934,6 +943,13 @@ footer li {
         border-radius: 10%;
     }
 
+    #patreon__img:hover {
+        -webkit-box-shadow: 5px 5px 25px 0px rgba(30,27,80,1);
+        -moz-box-shadow: 5px 5px 25px 0px rgba(30,27,80,1);
+        box-shadow: 5px 5px 25px 0px rgba(30,27,80,1);
+        transition-duration: 0.1s;
+    }
+
     /* CSS +1024 TORNEOS */
 
     #bodygrid__Torneos {
@@ -958,9 +974,19 @@ footer li {
     .torneosLogos {
         width: 120px;
     }
+
+    .torneosLogos:hover {
+        transform: scale(1.2);
+        transition-duration: 0.2s;
+    }
     
     .torneosH3 {
         font-size: 3rem;
+    }
+
+    .torneosH3:hover {
+        transform: scale(1.1);
+        transition-duration: 0.2s;
     }
     
     .torneosP {
@@ -1051,5 +1077,15 @@ footer li {
 
     .footer__logo {
         width: 75px;
+    }
+
+    footer li:hover {
+        transform: scale(1.5);
+        transition-duration: 0.3s;
+    }
+    
+    footer h3:hover {
+        transform: scale(1.1);
+        transition-duration: 0.3s;
     }
 }
