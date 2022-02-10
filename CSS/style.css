@@ -17,26 +17,6 @@ body {
     color: #1e1b50;
 }
 
-body nav ul {
-    font-weight: 600;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 5px;
-}
-
-body nav ul li {
-    list-style-type: none;
-    padding: 0px 10px 0px 10px;
-}
-
-body nav a {
-    color: #c8f1ff;
-    text-decoration: none;
-}
-
 /* CSS INDEX */
 
 .grid__header {
@@ -97,6 +77,12 @@ body nav a {
 }
 
 form fieldset {
+    border: none;
+}
+
+.botones {
+    background-color: #1e1b50;
+    color: #c8f1ff;
     border: none;
 }
 
@@ -168,8 +154,12 @@ footer li {
 
     /* CSS +320 NAV */
 
-    body nav ul li {
-        font-size: 1rem;
+    .navbar-font-size {
+        font-size: 1.5rem;
+    }
+
+    .nav-font-size {
+        font-size: 1.2rem;
     }
 
     /* CSS +320 INDEX */
@@ -247,51 +237,6 @@ footer li {
             "footer";
         grid-row-gap: 10px;
         height: 100vh;
-    }
-
-    form {
-        color: #1e1b50;
-        font-size: 1rem;
-        font-weight: 500;
-        text-align: center;
-        width: 350px;
-        margin: auto;
-        border: solid 2px #1e1b50;
-    
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    form div {
-        margin: 5px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    form fieldset legend {
-        font-size: 1.5rem;
-        text-decoration: underline;
-    }
-    
-    form label {
-        font-size: 1.2rem;
-    }
-    
-    .BoxModelForm {
-        margin: 5px;
-    }
-    
-    .botones {
-        padding: 5px;
-        background-color: #1e1b50;
-        color: #c8f1ff;
-        font-weight: 500;
     }
 
     /* CSS +320 PATREON */
@@ -451,7 +396,6 @@ footer li {
         font-size: 0.75rem;
         font-weight: 600;
     }
-}
 
 @media screen and (min-width: 768px) {
 
@@ -472,7 +416,11 @@ footer li {
 
     /* CSS +768 NAV */
 
-    body nav ul li {
+    .navbar-font-size {
+        font-size: 1.75rem;
+    }
+
+    .nav-font-size {
         font-size: 1.5rem;
     }
 
@@ -552,49 +500,14 @@ footer li {
     }
 
     form {
-        color: #1e1b50;
-        font-size: 1.4 rem;
-        font-weight: 500;
-        text-align: center;
-        width: 550px;
-        height: 400px;
+        width: 75%;
         margin: auto;
-        border: solid 2px #1e1b50;
-    
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
     }
-    
-    form div {
-        margin: 5px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    form fieldset legend {
-        font-size: 2rem;
-        text-decoration: underline;
-    }
-    
-    form label {
-        font-size: 1.4rem;
-    }
-    
-    .BoxModelForm {
-        margin: 5px;
-    }
-    
+
     .botones {
-        padding: 5px;
         background-color: #1e1b50;
         color: #c8f1ff;
-        font-weight: 500;
+        border: none;
     }
 
     /* CSS +768 PATREON */
@@ -777,18 +690,13 @@ footer li {
     }
 
     /* CSS +1024 NAV */
-    body nav ul li{
-        font-size: 2rem;
+
+    .navbar-font-size {
+        font-size: 2.5rem;
     }
 
-    body nav ul li:hover {
-        background-color: #c8f1ff;
-        transform: scale(1.5);
-        transition-duration: 0.2s;
-    }
-    
-    body nav ul li:hover a {
-        color: #1e1b50;
+    .nav-font-size {
+        font-size: 2rem;
     }
 
     /* CSS +1024 INDEX */
@@ -868,55 +776,13 @@ footer li {
     }
 
     form {
-        color: #1e1b50;
-        font-size: 1.5rem;
-        font-weight: 500;
-        text-align: center;
-        width: 700px;
-        height: 500px;
-        margin: auto;
-        border: solid 3px #1e1b50;
-    
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    form div {
-        margin: 10px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    form fieldset legend {
-        font-size: 2rem;
-        text-decoration: underline;
-    }
-    
-    form label {
-        font-size: 1.8rem;
-    }
-    
-    .BoxModelForm {
-        margin: 5px;
-    }
-    
-    .botones {
-        padding: 10px;
-        background-color: #1e1b50;
-        color: #c8f1ff;
-        font-weight: 500;
+        width: 65%;
     }
 
     .botones:hover {
         background-color: #c8f1ff;
         color: #1e1b50;
-        transform: scale(1.2);
+        transform: scale(1.1);
         transition-duration: 0.3s;
     }
 
@@ -1019,7 +885,7 @@ footer li {
     #sectionNoticiaEjemplo {
         grid-area: sectionNoticiaEjemplo;
         margin: auto;
-        width: 75%;
+        width: 85%;
         color: #1e1b50;
     }
     
@@ -1042,13 +908,13 @@ footer li {
     }
     
     #sectionNoticiaEjemplo h3 {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         text-align: left;
         padding: 5px;
     }
     
     #sectionNoticiaEjemplo p {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-weight: 500;
         text-align: justify;
         padding: 5px;
@@ -1060,7 +926,7 @@ footer li {
     }
     
     #sectionNoticiaEjemplo ul {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-weight: 500;
         text-align: justify;
         padding: 5px;
@@ -1071,7 +937,6 @@ footer li {
         background-color: #1e1b50;
         padding-top: 10px;
     
-        
         width: 100%;
         display: flex;
         flex-direction: row;

@@ -13,7 +13,7 @@
 
     <!-- CSS propio -->
 
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 
     <!-- Código FONT -->
 
@@ -25,69 +25,86 @@
     <!--Comienzo Header-->
     <header class="grid__header">
         <a href="../index.html"><img src="../assets/img/SANTUPEA_HEADER_2.png" alt="logo header" width="100%"></a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="acerca-de-mi.html">Acerca de mí</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="patreon.html">Patreon</a></li>
-                <li><a href="torneos.html">Torneos</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand navbar-font-size" href="#">Barra de Navegación</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link nav-font-size" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-font-size" href="acerca-de-mi.html">Acerca</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-font-size active" aria-current="page" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-font-size" href="patreon.html">Patreon</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-font-size" href="torneos.html">Torneos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <!--Cierre Header-->
 
     <!--Comienzo Section de Contacto-->
     <section id="grid__section__contacto">
-        <form action="#" method="post" enctype="text/plain">
-            <fieldset>
-                    <legend id="form_legend">Formulario de Contacto</legend>
-                        <div>
-                            <label for="nombre-form" class="BoxModelForm">Nombre:</label>
-                            <input type="text" name="nombre-form" id="nombre-form" placeholder="Escribe tu nombre" class="BoxModelForm">
-                        </div>
-                        <div>
-                            <label for="email-form" class="BoxModelForm">Email:</label>
-                            <input type="email" name="email-form" id="email-form" required placeholder="Escribe tu email" class="BoxModelForm">
-                        </div>    
-                        <div>
-                            <label for="region-favorita" class="BoxModelForm">Región Favorita:</label>
-                                <select name="region-favorita" class="BoxModelForm">
-                                    <option disabled value="">Elige Una Opción</option>
-                                    <option value="Bandle">Bandle</option>
-                                    <option value="Bilgewater">Bilgewater</option>
-                                    <option value="Demacia">Demacia</option>
-                                    <option value="Freljord">Freljord</option>
-                                    <option value="Ionia">Ionia</option>
-                                    <option value="Noxus">Noxus</option>
-                                    <option value="P&Z">P&Z</option>
-                                    <option value="Shadow-Isles">Shadow Isles</option>
-                                    <option value="Shurima">Shurima</option>
-                                    <option value="Targon">Targon</option>
-                                </select>
-                        </div>
-                        <div>
-                            <label for="edad" class="BoxModelForm">Edad:</label>
-                                <input type="radio" name="edad" value="18-25" class="BoxModelForm" required>18 a 25 años
-                                <input type="radio" name="edad" value="26-35" class="BoxModelForm" required>26 a 35 años
-                                <input type="radio" name="edad" value="mas-35" class="BoxModelForm" required>+35 años
-                        </div>
-                        <div>
-                            <label for="referencia" class="BoxModelForm">¿Cómo me conociste?</label>
-                                <input type="checkbox" name="referencia" value="google" class="BoxModelForm">Google.
-                                <input type="checkbox" name="referencia" value="redes" class="BoxModelForm">Por mi trabajo en Redes.
-                                <input type="checkbox" name="referencia" value="comentario" class="BoxModelForm">Te hablaron de mí.                 
-                        </div>    
-                        <div>    
-                            <label for="mensaje" class="BoxModelForm">Mensaje:</label>
-                            <textarea rows="5" cols="30" required placeholder="Escribe tu mensaje." class="BoxModelForm" id="mensaje-form"></textarea> 
-                        </div>    
-                        <div>    
-                            <input type="submit" class="BoxModelForm botones">
-                            <input type="reset" class="BoxModelForm botones">
-                        </div>
-                </fieldset>
-        </form>
+
+        <div class="container">
+            <h3>Formulario de Contacto</h3>
+            <form action="#">
+                <div class="form-group mb-3">
+                    <label for="nombre-form">Nombre:</label>
+                    <input type="text" name="nombre-form" id="nombre-form" placeholder="Escribe tu nombre" class="form-control">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="email-form">Email:</label>
+                    <input type="email" name="email-form" id="email-form" required placeholder="Escribe tu email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="region-favorita">Región Favorita:</label>
+                        <select name="region-favorita" class="form-select">
+                            <option disabled value="">Elige Una Opción</option>
+                            <option value="Bandle">Bandle</option>
+                            <option value="Bilgewater">Bilgewater</option>
+                            <option value="Demacia">Demacia</option>
+                            <option value="Freljord">Freljord</option>
+                            <option value="Ionia">Ionia</option>
+                            <option value="Noxus">Noxus</option>
+                            <option value="P&Z">P&Z</option>
+                            <option value="Shadow-Isles">Shadow Isles</option>
+                            <option value="Shurima">Shurima</option>
+                            <option value="Targon">Targon</option>
+                        </select>
+                </div>
+                <div class="mb-3">
+                    <label for="edad" class="text-center">Edad:</label>
+                        <input type="radio" name="edad" value="18-25" class="mx-1" required>18 a 25 años
+                        <input type="radio" name="edad" value="26-35" class="mx-1" required>26 a 35 años
+                        <input type="radio" name="edad" value="mas-35" class="mx-1" required>+35 años
+                </div>
+                <div class="mb-3">
+                    <label for="referencia">¿Cómo me conociste?</label>
+                        <input type="checkbox" name="referencia" value="google" class="mx-1">Google.
+                        <input type="checkbox" name="referencia" value="redes" class="mx-1">Por mis Redes.
+                        <input type="checkbox" name="referencia" value="comentario" class="mx-1">Te hablaron de mí.                 
+                </div>
+                <div class="form-group mb-3">    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea rows="5" cols="30" required placeholder="Escribe tu mensaje." class="form-control" id="mensaje-form"></textarea> 
+                </div>    
+                <button type="submit" class="btn btn-primary botones">Enviar Formulario</button>
+                <button type="reset" class="btn btn-primary botones">Resetear Formulario</button>
+            </form>
+        </div>
     </section>
     <!--Cierre Section de Contacto-->
 
