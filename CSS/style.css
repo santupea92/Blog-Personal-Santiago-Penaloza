@@ -113,8 +113,6 @@ form fieldset {
 /* CSS FOOTER*/
 
 footer {
-    font-size: 2rem;
-    font-weight: 600;
     background-color: #1e1b50;
     padding-top: 10px;
 
@@ -140,6 +138,13 @@ footer ul {
 footer li {
     list-style-type: none;
     padding-right: 2px;
+}
+
+#h3Footer {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #c8f1ff;
 }
 
 /* CSS +320 */
@@ -422,8 +427,6 @@ footer li {
 
     /* CSS +320 FOOTER */
     footer {
-        font-size: 0.75rem;
-        font-weight: 600;
         background-color: #1e1b50;
         padding-top: 10px;
         padding-bottom: 5px;
@@ -442,6 +445,11 @@ footer li {
 
     .footer__logo {
         width: 15px;
+    }
+
+    #h3Footer {
+        font-size: 0.75rem;
+        font-weight: 600;
     }
 }
 
@@ -725,8 +733,6 @@ footer li {
 
     /* CSS +768 FOOTER */
     footer {
-        font-size: 1.5rem;
-        font-weight: 600;
         background-color: #1e1b50;
         padding-top: 10px;
         padding-bottom: 5px;
@@ -746,6 +752,11 @@ footer li {
 
     .footer__logo {
         width: 50px;
+    }
+
+    #h3Footer {
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 }
 
@@ -1057,8 +1068,6 @@ footer li {
 
     /* CSS +1024 FOOTER */
     footer {
-        font-size: 2.5rem;
-        font-weight: 600;
         background-color: #1e1b50;
         padding-top: 10px;
     
@@ -1082,6 +1091,11 @@ footer li {
     footer li:hover {
         transform: scale(1.5);
         transition-duration: 0.3s;
+    }
+
+    #h3Footer {
+        font-size: 2.5rem;
+        font-weight: 600;
     }
     
     footer h3:hover {
