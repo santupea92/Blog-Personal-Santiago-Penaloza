@@ -777,6 +777,7 @@ footer li {
 
     form {
         width: 65%;
+        font-size: 1.5rem;
     }
 
     .botones:hover {
