@@ -149,12 +149,7 @@ footer li {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "header"
- "sectionNoticia"
- "sectionNoticia-2"
- "sectionNoticia-3"
- "sectionNoticia-4"
- "footer";
+    grid-template-areas: "header" "sectionNoticia" "sectionNoticia-2" "sectionNoticia-3" "sectionNoticia-4" "footer";
     height: auto;
   }
   /* CSS +320 NAV */
@@ -180,10 +175,7 @@ footer li {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 2fr 4.5fr 3fr 1fr;
-    grid-template-areas: "header"
- "sectionAcerca"
- "sectionAcerca-2"
- "footer";
+    grid-template-areas: "header" "sectionAcerca" "sectionAcerca-2" "footer";
     width: 100%;
     height: 100vh;
     grid-row-gap: 5px;
@@ -220,9 +212,7 @@ footer li {
   #bodyGrid__Contacto {
     display: grid;
     grid-template-rows: 1fr 5fr 0.5fr;
-    grid-template-areas: "header"
- "sectionContacto"
- "footer";
+    grid-template-areas: "header" "sectionContacto" "footer";
     grid-row-gap: 10px;
     height: 100vh;
   }
@@ -230,9 +220,7 @@ footer li {
   #bodygrid__Patreon {
     display: grid;
     grid-template-rows: 1fr 3.8fr auto;
-    grid-template-areas: "header"
- "sectionPatreon"
- "footer";
+    grid-template-areas: "header" "sectionPatreon" "footer";
     grid-row-gap: 5px;
   }
   #patreon__section {
@@ -258,9 +246,7 @@ footer li {
   /* CSS +320 TORNEOS */
   #bodygrid__Torneos {
     display: grid;
-    grid-template-areas: "header"
- "sectionTorneos"
- "footer";
+    grid-template-areas: "header" "sectionTorneos" "footer";
     grid-row-gap: 5px;
   }
   .section__torneos {
@@ -285,9 +271,7 @@ footer li {
   /* CSS +320 NOTICIA EJEMPLO */
   #bodyGrid__NoticiaEjemplo {
     display: grid;
-    grid-template-areas: "header"
- "sectionNoticiaEjemplo"
- "footer";
+    grid-template-areas: "header" "sectionNoticiaEjemplo" "footer";
     grid-row-gap: 5px;
     height: auto;
   }
@@ -362,12 +346,7 @@ footer li {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "header"
- "sectionNoticia"
- "sectionNoticia-2"
- "sectionNoticia-3"
- "sectionNoticia-4"
- "footer";
+    grid-template-areas: "header" "sectionNoticia" "sectionNoticia-2" "sectionNoticia-3" "sectionNoticia-4" "footer";
     height: auto;
   }
   /* CSS +768 NAV */
@@ -393,10 +372,7 @@ footer li {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 2fr 4.5fr 3fr 1fr;
-    grid-template-areas: "header"
- "sectionAcerca"
- "sectionAcerca-2"
- "footer";
+    grid-template-areas: "header" "sectionAcerca" "sectionAcerca-2" "footer";
     width: 100%;
     grid-row-gap: 15px;
   }
@@ -431,9 +407,7 @@ footer li {
   #bodyGrid__Contacto {
     display: grid;
     grid-template-rows: 1fr 5fr 0.5fr;
-    grid-template-areas: "header"
- "sectionContacto"
- "footer";
+    grid-template-areas: "header" "sectionContacto" "footer";
     grid-row-gap: 10px;
     height: 100vh;
   }
@@ -450,9 +424,7 @@ footer li {
   #bodygrid__Patreon {
     display: grid;
     grid-template-rows: 1fr auto 0.5fr;
-    grid-template-areas: "header"
- "sectionPatreon"
- "footer";
+    grid-template-areas: "header" "sectionPatreon" "footer";
     grid-row-gap: 5px;
     height: 100vh;
   }
@@ -480,9 +452,7 @@ footer li {
   #bodygrid__Torneos {
     display: grid;
     grid-template-rows: 1fr auto 0.5fr;
-    grid-template-areas: "header"
- "sectionTorneos"
- "footer";
+    grid-template-areas: "header" "sectionTorneos" "footer";
     grid-row-gap: 5px;
   }
   .section__torneos {
@@ -507,9 +477,7 @@ footer li {
   /* CSS +768 NOTICIA EJEMPLO */
   #bodyGrid__NoticiaEjemplo {
     display: grid;
-    grid-template-areas: "header"
- "sectionNoticiaEjemplo"
- "footer";
+    grid-template-areas: "header" "sectionNoticiaEjemplo" "footer";
     grid-row-gap: 5px;
     height: auto;
   }
@@ -585,10 +553,7 @@ footer li {
   .bodyGrid__inicio {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-areas: "header header"
- "sectionNoticia sectionNoticia-2"
- "sectionNoticia-3 sectionNoticia-4"
- "footer footer";
+    grid-template-areas: "header header" "sectionNoticia sectionNoticia-2" "sectionNoticia-3 sectionNoticia-4" "footer footer";
     height: auto;
   }
   /* CSS +1024 NAV */
@@ -608,6 +573,11 @@ footer li {
     font-weight: 500;
     margin: 10px;
   }
+  .articleNoticia {
+    width: 98%;
+    margin: auto;
+    justify-self: center;
+  }
   .articleNoticia:hover {
     transform: scale(1.02);
     transition-duration: 0.2s;
@@ -618,9 +588,7 @@ footer li {
     display: grid;
     grid-template-columns: 45% 55%;
     grid-template-rows: 1fr 5fr 1fr;
-    grid-template-areas: "header header"
- "sectionAcerca sectionAcerca-2"
- "footer footer";
+    grid-template-areas: "header header" "sectionAcerca sectionAcerca-2" "footer footer";
     grid-row-gap: 15px;
     height: 800px;
     align-items: center;
@@ -654,9 +622,7 @@ footer li {
   /* CSS +1024 CONTACTO */
   #bodyGrid__Contacto {
     display: grid;
-    grid-template-areas: "header"
- "sectionContacto"
- "footer";
+    grid-template-areas: "header" "sectionContacto" "footer";
     grid-row-gap: 15px;
   }
   form {
@@ -673,9 +639,7 @@ footer li {
   #bodygrid__Patreon {
     display: grid;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "header"
- "sectionPatreon"
- "footer";
+    grid-template-areas: "header" "sectionPatreon" "footer";
     grid-row-gap: 10px;
   }
   #patreon__section {
@@ -706,9 +670,7 @@ footer li {
   /* CSS +1024 TORNEOS */
   #bodygrid__Torneos {
     display: grid;
-    grid-template-areas: "header"
- "sectionTorneos"
- "footer";
+    grid-template-areas: "header" "sectionTorneos" "footer";
     grid-row-gap: 15px;
   }
   .section__torneos {
@@ -740,9 +702,7 @@ footer li {
   /* CSS +1024 NOTICIA EJEMPLO */
   #bodyGrid__NoticiaEjemplo {
     display: grid;
-    grid-template-areas: "header"
- "sectionNoticiaEjemplo"
- "footer";
+    grid-template-areas: "header" "sectionNoticiaEjemplo" "footer";
     grid-row-gap: 5px;
     height: auto;
   }
@@ -800,7 +760,7 @@ footer li {
     align-items: center;
   }
   footer li:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition-duration: 0.3s;
   }
   footer h3:hover {
@@ -808,10 +768,11 @@ footer li {
     transition-duration: 0.3s;
   }
   .footerLogo {
-    width: 125px;
+    width: 100px;
   }
   .footer__logo {
-    width: 75px;
+    width: 50px;
+    padding-right: 5px;
   }
   #h3Footer {
     font-size: 2.5rem;

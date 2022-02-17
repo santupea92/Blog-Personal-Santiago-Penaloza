@@ -25,6 +25,7 @@
     }
 
     /* CSS +1024 INDEX */
+
     #grid__section__inicio a h2, #grid__section__inicio-2 a h2, #grid__section__inicio-3 a h2, #grid__section__inicio-4 a h2 {
         font-size: 2.5rem;
         margin: 10px;
@@ -34,6 +35,12 @@
         font-size: 1.8rem;
         font-weight: 500;
         margin: 10px;
+    }
+
+    .articleNoticia {
+        width: 98%;
+        margin: auto;
+        justify-self: center;
     }
 
     .articleNoticia:hover {
@@ -272,7 +279,7 @@
         align-items: center;
 
         li:hover {
-            transform: scale(1.5);
+            transform: scale(1.2);
             transition-duration: 0.3s;
         }
 
@@ -283,11 +290,12 @@
     }
 
     .footerLogo {
-        width: 125px;
+        width: 100px;
     }
 
     .footer__logo {
-        width: 75px;
+        width: 50px;
+        padding-right: 5px;
     }
 
     #h3Footer {
