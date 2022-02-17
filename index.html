@@ -13,7 +13,7 @@
 
     <!-- CSS propio -->
 
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 
     <!-- Código FONT -->
 
@@ -29,33 +29,39 @@
     <!--Comienzo Header-->
     <header class="grid__header">
         <a href="index.html"><img src="assets/img/SANTUPEA_HEADER_2.png" alt="logo header" width="100%"></a>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid navbarFondo">
-              <a class="navbar-brand navbar-font-size" href="#">Menú</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link nav-font-size active" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-font-size" href="pages/acerca-de-mi.html">Acerca</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-font-size" href="pages/contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-font-size" href="pages/patreon.html">Patreon</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-font-size" href="pages/torneos.html">Torneos</a>
-                  </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbarId">
+          <div class="container-fluid">
+              <div class="d-flex flex-grow-1">
+                  <span class="w-100 d-lg-none d-block">
+                      <!-- hidden spacer to center brand on mobile --></span>
+                  <a class="navbar-brand nav-font-size" href="#" id="navMenu">Menú</a>
+                  <div class="w-100 text-right">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                  </div>
               </div>
-            </div>
-          </nav>
+              <div class="collapse navbar-collapse flex-grow-1 text-right" id="Navbar">
+                  <ul class="navbar-nav ms-auto flex-nowrap">
+                      <li class="nav-item nav-font-size active">
+                          <a href="index.html" class="nav-link">Inicio</a>
+                      </li>
+                      <li class="nav-item nav-font-size active">
+                          <a href="pages/acerca-de-mi.html" class="nav-link">Acerca</a>
+                      </li>
+                      <li class="nav-item nav-font-size active">
+                          <a href="pages/contacto.html" class="nav-link">Contacto</a>
+                      </li>
+                      <li class="nav-item nav-font-size active">
+                          <a href="pages/patreon.html" class="nav-link">Patreon</a>
+                      </li>
+                      <li class="nav-item nav-font-size active">
+                        <a href="pages/torneos.html" class="nav-link">Torneos</a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+        </nav>
     </header>
     <!--Cierre Header-->
 

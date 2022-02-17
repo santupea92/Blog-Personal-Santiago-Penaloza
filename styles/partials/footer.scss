@@ -1,0 +1,36 @@
+/* CSS FOOTER*/
+
+footer {
+    background-color: $color-principal-violetaOscuro;
+    padding-top: 10px;
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: $color-principal-celeste;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    li {
+        list-style-type: none;
+        padding-right: 2px;
+    }
+}
+
+#h3Footer {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: $color-principal-celeste;
+}

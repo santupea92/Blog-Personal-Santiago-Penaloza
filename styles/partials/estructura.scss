@@ -1,0 +1,97 @@
+/* CSS NAVBAR */
+
+#navbarId {
+    background-color: $color-principal-violetaOscuro !important;
+}
+
+#navMenu {
+    color: #c8f1ff !important;
+}
+
+#Navbar {
+    ul {
+        li {
+            a {
+                color: #dddddd !important;
+            }
+        }
+    }
+}
+
+/* CSS INDEX */
+
+.grid__header {
+    grid-area: header;
+    background-color: $color-principal-violetaOscuro;
+}
+
+#grid__section__inicio {
+    grid-area: sectionNoticia;
+    width: 100%;
+}
+
+#grid__section__inicio-2 {
+    grid-area: sectionNoticia-2;
+    width: 100%;
+}
+
+#grid__section__inicio-3 {
+    grid-area: sectionNoticia-3;
+    width: 100%;
+}
+
+#grid__section__inicio-4 {
+    grid-area: sectionNoticia-4;
+    width: 100%;
+}
+
+.grid__footer {
+    grid-area: footer;
+    background-color: $color-principal-violetaOscuro;
+}
+
+.articleNoticia img {
+    width: 100%;
+}
+
+#grid__section__inicio a, #grid__section__inicio-2 a, #grid__section__inicio-3 a, #grid__section__inicio-4 a {
+    text-decoration: none;
+    text-align: center;
+    color: $color-principal-violetaOscuro;
+}
+
+/* CSS ACERCA DE MI */
+
+#grid__section__acerca {
+    grid-area: sectionAcerca;
+    margin-right: 5px;
+        img {
+            border-radius: 20%;
+        }
+}
+
+/* CSS CONTACTO */
+
+#grid__section__contacto {
+    grid-area: sectionContacto;
+}
+
+form fieldset {
+    border: none;
+}
+
+.botones {
+    background-color: $color-principal-violetaOscuro;
+    color: $color-principal-celeste;
+    border: none;
+}
+
+/* CSS TORNEOS */
+
+.section__torneos article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;    
+}
