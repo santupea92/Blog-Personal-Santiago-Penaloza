@@ -16,6 +16,19 @@ body {
   color: #1e1b50;
 }
 
+.btn-personalizado {
+  background-color: #1e1b50;
+  color: #c8f1ff;
+}
+
+.btn-personalizado:hover {
+  background-color: #c8f1ff;
+  color: #1e1b50;
+  border: solid 1px #1e1b50 !important;
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
 /* Estructura */
 /* CSS NAVBAR */
 #navbarId {
@@ -36,39 +49,9 @@ body {
   background-color: #1e1b50;
 }
 
-#grid__section__inicio {
-  grid-area: sectionNoticia;
-  width: 100%;
-}
-
-#grid__section__inicio-2 {
-  grid-area: sectionNoticia-2;
-  width: 100%;
-}
-
-#grid__section__inicio-3 {
-  grid-area: sectionNoticia-3;
-  width: 100%;
-}
-
-#grid__section__inicio-4 {
-  grid-area: sectionNoticia-4;
-  width: 100%;
-}
-
 .grid__footer {
   grid-area: footer;
   background-color: #1e1b50;
-}
-
-.articleNoticia img {
-  width: 100%;
-}
-
-#grid__section__inicio a, #grid__section__inicio-2 a, #grid__section__inicio-3 a, #grid__section__inicio-4 a {
-  text-decoration: none;
-  text-align: center;
-  color: #1e1b50;
 }
 
 /* CSS ACERCA DE MI */
@@ -549,38 +532,12 @@ footer li {
 
 /* CSS +1024 */
 @media screen and (min-width: 1024px) {
-  /* CSS +1024 GRID */
-  .bodyGrid__inicio {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "header header" "sectionNoticia sectionNoticia-2" "sectionNoticia-3 sectionNoticia-4" "footer footer";
-    height: auto;
-  }
   /* CSS +1024 NAV */
   .navbar-font-size {
     font-size: 2.5rem;
   }
   .nav-font-size {
     font-size: 2rem;
-  }
-  /* CSS +1024 INDEX */
-  #grid__section__inicio a h2, #grid__section__inicio-2 a h2, #grid__section__inicio-3 a h2, #grid__section__inicio-4 a h2 {
-    font-size: 2.5rem;
-    margin: 10px;
-  }
-  #grid__section__inicio a h3, #grid__section__inicio-2 a h3, #grid__section__inicio-3 a h3, #grid__section__inicio-4 a h3 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin: 10px;
-  }
-  .articleNoticia {
-    width: 98%;
-    margin: auto;
-    justify-self: center;
-  }
-  .articleNoticia:hover {
-    transform: scale(1.02);
-    transition-duration: 0.2s;
   }
   /* CSS +1024 ACERCA DE MI */
   #bodyGrid__Acerca {
@@ -752,7 +709,6 @@ footer li {
   footer {
     background-color: #1e1b50;
     padding-top: 10px;
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

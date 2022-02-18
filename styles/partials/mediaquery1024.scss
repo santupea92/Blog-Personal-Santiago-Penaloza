@@ -2,18 +2,6 @@
 
 @media screen and (min-width: 1024px) {
 
-    /* CSS +1024 GRID */
-    .bodyGrid__inicio {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-areas:
-            "header header"
-            "sectionNoticia sectionNoticia-2"
-            "sectionNoticia-3 sectionNoticia-4"
-            "footer footer";
-        height: auto;
-    }
-
     /* CSS +1024 NAV */
 
     .navbar-font-size {
@@ -22,30 +10,6 @@
 
     .nav-font-size {
         font-size: 2rem;
-    }
-
-    /* CSS +1024 INDEX */
-
-    #grid__section__inicio a h2, #grid__section__inicio-2 a h2, #grid__section__inicio-3 a h2, #grid__section__inicio-4 a h2 {
-        font-size: 2.5rem;
-        margin: 10px;
-    }
-    
-    #grid__section__inicio a h3, #grid__section__inicio-2 a h3, #grid__section__inicio-3 a h3, #grid__section__inicio-4 a h3 {
-        font-size: 1.8rem;
-        font-weight: 500;
-        margin: 10px;
-    }
-
-    .articleNoticia {
-        width: 98%;
-        margin: auto;
-        justify-self: center;
-    }
-
-    .articleNoticia:hover {
-        transform: scale(1.02);
-        transition-duration: 0.2s;
     }
 
     /* CSS +1024 ACERCA DE MI */

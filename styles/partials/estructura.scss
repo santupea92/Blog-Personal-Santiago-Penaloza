@@ -25,39 +25,9 @@
     background-color: $color-principal-violetaOscuro;
 }
 
-#grid__section__inicio {
-    grid-area: sectionNoticia;
-    width: 100%;
-}
-
-#grid__section__inicio-2 {
-    grid-area: sectionNoticia-2;
-    width: 100%;
-}
-
-#grid__section__inicio-3 {
-    grid-area: sectionNoticia-3;
-    width: 100%;
-}
-
-#grid__section__inicio-4 {
-    grid-area: sectionNoticia-4;
-    width: 100%;
-}
-
 .grid__footer {
     grid-area: footer;
     background-color: $color-principal-violetaOscuro;
-}
-
-.articleNoticia img {
-    width: 100%;
-}
-
-#grid__section__inicio a, #grid__section__inicio-2 a, #grid__section__inicio-3 a, #grid__section__inicio-4 a {
-    text-decoration: none;
-    text-align: center;
-    color: $color-principal-violetaOscuro;
 }
 
 /* CSS ACERCA DE MI */

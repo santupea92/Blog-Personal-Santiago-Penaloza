@@ -24,6 +24,19 @@ body {
     color: $color-principal-violetaOscuro;
 }
 
+.btn-personalizado {
+    background-color: $color-principal-violetaOscuro;
+    color: $color-principal-celeste;
+
+    &:hover {
+        background-color: $color-principal-celeste;
+        color: $color-principal-violetaOscuro;
+        border: solid 1px $color-principal-violetaOscuro !important;
+        transform: scale(1.1);
+        transition-duration: 0.2s;
+    }
+}
+
 /* Estructura */
 
 @import "partials/estructura";
