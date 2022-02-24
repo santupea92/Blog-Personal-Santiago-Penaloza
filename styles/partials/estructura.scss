@@ -20,9 +20,18 @@
 
 /* CSS INDEX */
 
+main {
+    width: 100%;
+    padding: 10px;
+}
+
 .grid__header {
     grid-area: header;
     background-color: $color-principal-violetaOscuro;
+}
+
+.card-personalizado {
+    background-color: map-get($map: $cards-personalizado, $key: fondo) !important;
 }
 
 .grid__footer {

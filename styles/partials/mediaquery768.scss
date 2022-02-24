@@ -18,24 +18,24 @@
     /* CSS +768 NAV */
 
     .navbar-font-size {
-        font-size: 1.75rem;
+        @include font-size(1.75rem);
     }
 
     .nav-font-size {
-        font-size: 1.5rem;
+        @include font-size(1.5rem);
     }
 
     /* CSS +768 INDEX */
 
     #grid__section__inicio a h2, #grid__section__inicio-2 a h2, #grid__section__inicio-3 a h2, #grid__section__inicio-4 a h2 {
-        font-size: 1.75rem;
-        margin: 5px;
+        @include font-size(1.75rem);
+        @include margin(5px);
     }
     
     #grid__section__inicio a h3, #grid__section__inicio-2 a h3, #grid__section__inicio-3 a h3, #grid__section__inicio-4 a h3 {
-        font-size: 1.5rem;
+        @include font-size(1.5rem);
         font-weight: 500;
-        margin: 5px;
+        @include margin(5px);
     }
 
     /* CSS +768 ACERCA DE MI */
@@ -44,7 +44,7 @@
         color: $color-principal-violetaOscuro;
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 2fr 4.5fr 3fr 1fr;
+        grid-template-rows: 2fr 2fr 2fr 1fr;
         grid-template-areas:
             "header"
             "sectionAcerca"
@@ -57,32 +57,30 @@
     #grid__section__acerca {
         text-align: center;
         justify-self: center;
-        height: 300px;
-        width: 300px;
+        @include size(300px, 300px);
 
         img {
-            margin: auto;
+            @include margin(auto);
             height: 100%;
         }
     }
     
     #grid__section__acerca-2 {
         text-align: center;
-        width: 70%;
-        height: 300px;
-        margin: auto;
+        @include size(70%, 300px);
+        @include margin(auto);
 
         h2 {
-            font-size: 2.5rem;
+            @include font-size(2.5rem);
         }
 
         h3 {
-            font-size: 1.7rem;
-            padding: 10px 0px 10px 0;
+            @include font-size(1.7rem);
+            @include padding(10px 0px 10px 0);
         }
 
         p {
-            font-size: 1.5rem;
+            @include font-size(1.5rem);
             text-align: justify;
         }
     }
@@ -102,7 +100,7 @@
 
     form {
         width: 75%;
-        margin: auto;
+        @include margin(auto);
     }
 
     .botones {
@@ -127,7 +125,7 @@
     #patreon__section {
         grid-area: sectionPatreon;
         height: 600px;
-        margin: auto;
+        @include margin(auto);
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -136,14 +134,14 @@
     
     #patreon__h2 {
         text-align: center;
-        font-size: 2rem;
-        margin: 5px;
+        @include font-size(2rem);
+        @include margin(5px);
     }
 
     #patreon__img {
         display: block;
         width: 80%;
-        margin: auto;
+        @include margin(auto);
         border-radius: 10%;
     }
     
@@ -163,8 +161,7 @@
         justify-self: center;
 
         grid-area: sectionTorneos;
-        width: 95%;
-        height: 750px;
+        @include size(95%, 750px);
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -176,11 +173,11 @@
     }
 
     .torneosH3 {
-        font-size: 2.2rem;
+        @include font-size(2.2rem);
     }
     
     .torneosP {
-        font-size: 1.7rem;
+        @include font-size(1.7rem);
     }
 
     /* CSS +768 NOTICIA EJEMPLO */
@@ -197,68 +194,56 @@
     
     #sectionNoticiaEjemplo {
         grid-area: sectionNoticiaEjemplo;
-        margin: auto;
+        @include margin(auto);
         width: 75%;
         color: $color-principal-violetaOscuro;
 
         h1 {
-            font-size: 2.5rem;
+            @include font-size(2.5rem);
             text-align: center;
-            padding: 5px;
+            @include padding(5px);
         }
 
         h2 {
-            font-size: 2rem;
+            @include font-size(2rem);
             text-align: center;
-            padding: 5px;
+            @include padding(5px);
         }
 
         h3 {
-            font-size: 1.5rem;
+            @include font-size(1.5rem);
             text-align: left;
-            padding: 5px;
+            @include padding(5px);
         }
 
         p {
-            font-size: 1.5rem;
+            @include font-size(1.5rem);
             font-weight: 500;
             text-align: justify;
-            padding: 5px;
+            @include padding(5px);
         }
 
         img {
             text-align: center;
-            padding: 5px;
+            @include padding(5px);
         }
 
         ul {
-            font-size: 1.5rem;
+            @include font-size(1.5rem);
             font-weight: 500;
             text-align: justify;
-            padding: 5px;
+            @include padding(5px);
         }
     }
 
     #sectionNoticiaEjemplo__iframe {
-        width: 100%;
-        height: 300px;
-        padding: 5px;
+        @include size (100%, 300px);
+        @include padding(5px);
     }
 
     /* CSS +768 FOOTER */
-    footer {
-        background-color: $color-principal-violetaOscuro;
-        padding-top: 10px;
-        padding-bottom: 5px;
-    
-        
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-    }
+
+    @extend .grid__footer;
     
     .footerLogo {
         width: 75px;
@@ -269,7 +254,7 @@
     }
 
     #h3Footer {
-        font-size: 1.5rem;
+        @include font-size(1.5rem);
         font-weight: 600;
     }
 }

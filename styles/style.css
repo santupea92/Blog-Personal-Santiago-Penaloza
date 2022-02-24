@@ -1,4 +1,6 @@
 /* VARIABLES */
+/* MAPS */
+/* MIXINS */
 /* SCSS */
 * {
   margin: 0;
@@ -44,9 +46,18 @@ body {
 }
 
 /* CSS INDEX */
+main {
+  width: 100%;
+  padding: 10px;
+}
+
 .grid__header {
   grid-area: header;
   background-color: #1e1b50;
+}
+
+.card-personalizado {
+  background-color: #dddddd !important;
 }
 
 .grid__footer {
@@ -92,7 +103,7 @@ form fieldset {
 /* CSS FOOTER*/
 footer {
   background-color: #1e1b50;
-  padding-top: 10px;
+  padding: 10px 0 10px 0;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -160,15 +171,15 @@ footer li {
     grid-template-rows: 2fr 4.5fr 3fr 1fr;
     grid-template-areas: "header" "sectionAcerca" "sectionAcerca-2" "footer";
     width: 100%;
-    height: 100vh;
+    height: 100hv;
     grid-row-gap: 5px;
   }
   #grid__section__acerca {
     text-align: center;
     justify-self: center;
     align-self: end;
-    height: 300px;
     width: 300px;
+    height: 300px;
   }
   #grid__section__acerca img {
     margin: auto;
@@ -300,17 +311,6 @@ footer li {
     padding: 5px;
   }
   /* CSS +320 FOOTER */
-  footer {
-    background-color: #1e1b50;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
   .footerLogo {
     width: 45px;
   }
@@ -354,7 +354,7 @@ footer li {
     color: #1e1b50;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 2fr 4.5fr 3fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr 1fr;
     grid-template-areas: "header" "sectionAcerca" "sectionAcerca-2" "footer";
     width: 100%;
     grid-row-gap: 15px;
@@ -362,8 +362,8 @@ footer li {
   #grid__section__acerca {
     text-align: center;
     justify-self: center;
-    height: 300px;
     width: 300px;
+    height: 300px;
   }
   #grid__section__acerca img {
     margin: auto;
@@ -507,17 +507,6 @@ footer li {
     padding: 5px;
   }
   /* CSS +768 FOOTER */
-  footer {
-    background-color: #1e1b50;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
   .footerLogo {
     width: 75px;
   }
@@ -552,8 +541,8 @@ footer li {
   }
   #grid__section__acerca {
     margin-right: 15px;
-    height: 500px;
     width: 500px;
+    height: 500px;
     text-align: right;
   }
   #grid__section__acerca img {
@@ -561,8 +550,8 @@ footer li {
   }
   #grid__section__acerca-2 {
     grid-area: sectionAcerca-2;
-    height: 500px;
     width: 500px;
+    height: 500px;
     margin-left: 15px;
   }
   #grid__section__acerca-2 h2 {
@@ -628,7 +617,7 @@ footer li {
   #bodygrid__Torneos {
     display: grid;
     grid-template-areas: "header" "sectionTorneos" "footer";
-    grid-row-gap: 15px;
+    grid-row-gap: 5px;
   }
   .section__torneos {
     grid-area: sectionTorneos;
@@ -706,20 +695,11 @@ footer li {
     padding: 5px;
   }
   /* CSS +1024 FOOTER */
-  footer {
-    background-color: #1e1b50;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  footer li:hover {
+  .grid__footer li:hover {
     transform: scale(1.2);
     transition-duration: 0.3s;
   }
-  footer h3:hover {
+  .grid__footer h3:hover {
     transform: scale(1.1);
     transition-duration: 0.3s;
   }
@@ -728,7 +708,7 @@ footer li {
   }
   .footer__logo {
     width: 50px;
-    padding-right: 5px;
+    padding: 0 5px 0 0;
   }
   #h3Footer {
     font-size: 2.5rem;

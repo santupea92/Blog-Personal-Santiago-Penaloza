@@ -5,11 +5,11 @@
     /* CSS +1024 NAV */
 
     .navbar-font-size {
-        font-size: 2.5rem;
+        @include font-size(2.5rem);
     }
 
     .nav-font-size {
-        font-size: 2rem;
+        @include font-size(2rem);
     }
 
     /* CSS +1024 ACERCA DE MI */
@@ -30,8 +30,7 @@
 
     #grid__section__acerca {
         margin-right: 15px;
-        height: 500px;
-        width: 500px;
+        @include size(500px, 500px);
         text-align: right;
 
         img {
@@ -41,21 +40,20 @@
 
     #grid__section__acerca-2 {
         grid-area: sectionAcerca-2;
-        height: 500px;
-        width: 500px;
+        @include size(500px, 500px);
         margin-left: 15px;
 
         h2 {
-            font-size: 4rem;
+            @include font-size(4rem);
         }
 
         h3 {
-            font-size: 2rem;
-            padding: 20px 0px 20px 0;
+            @include font-size(2rem);
+            @include padding(20px 0px 20px 0);
         }
 
         p {
-            font-size: 1.7rem;
+            @include font-size(1.7rem);
             text-align: justify;
         }
     }
@@ -73,7 +71,7 @@
 
     form {
         width: 65%;
-        font-size: 1.5rem;
+        @include font-size(1.5rem);
     }
 
     .botones:hover {
@@ -98,7 +96,7 @@
     #patreon__section {
         grid-area: sectionPatreon;
         height: 550px;
-        margin: auto;
+        @include margin(auto);
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -107,13 +105,13 @@
     
     #patreon__h2 {
         text-align: center;
-        font-size: 2.7rem;
+        @include font-size(2.7rem);
     }
     
     #patreon__img {
         display: block;
         width: 70%;
-        margin: auto;
+        @include margin(auto);
         border-radius: 10%;
 
         &:hover {
@@ -132,13 +130,12 @@
         "header"
         "sectionTorneos"
         "footer";
-        grid-row-gap: 15px;
+        grid-row-gap: 5px;
     }
     
     .section__torneos {
         grid-area: sectionTorneos;
-        width: 95%;
-        height: 700px;
+        @include size(95%, 700px);
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -155,7 +152,7 @@
     }
     
     .torneosH3 {
-        font-size: 3rem;
+        @include font-size(3rem);
     }
 
     .torneosH3:hover {
@@ -164,7 +161,7 @@
     }
     
     .torneosP {
-        font-size: 2.5rem;
+        @include font-size(2.5rem);
     }
 
     /* CSS +1024 NOTICIA EJEMPLO */
@@ -181,67 +178,60 @@
     
     #sectionNoticiaEjemplo {
         grid-area: sectionNoticiaEjemplo;
-        margin: auto;
+        @include margin(auto);
         width: 85%;
         color: $color-principal-violetaOscuro;
 
         h1 {
-            font-size: 2.5rem;
+            @include font-size(2.5rem);
             text-align: center;
-            padding: 5px;
+            @include padding(5px);
         }
 
         h2 {
-            font-size: 2rem;
+            @include font-size(2rem);
             text-align: center;
-            padding: 5px;
+            @include padding(5px);
         }
 
         h3 {
-            font-size: 1.9rem;
+            @include font-size(1.9rem);
             text-align: left;
-            padding: 5px;
+            @include padding(5px);
         }
 
         p {
-            font-size: 1.7rem;
+            @include font-size(1.7rem);
             font-weight: 500;
             text-align: justify;
-            padding: 5px;
+            @include padding(5px);
         }
 
         img {
             text-align: center;
-            padding: 5px;
+            @include padding (5px);
         }
 
         ul {
-            font-size: 1.7rem;
+            @include font-size (1.7rem);
             font-weight: 500;
             text-align: justify;
-            padding: 5px;
+            @include padding (5px);
         }
     
     }
     
     #sectionNoticiaEjemplo__iframe {
-        width: 100%;
-        height: 400px;
-        padding: 5px;
+        @include size (100%, 400px);
+        @include padding (5px);
     }
 
     /* CSS +1024 FOOTER */
-    footer {
-        background-color: $color-principal-violetaOscuro;
-        padding-top: 10px;
     
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-
+    @extend .grid__footer;
+    
+    .grid__footer {
+        
         li:hover {
             transform: scale(1.2);
             transition-duration: 0.3s;
@@ -259,11 +249,11 @@
 
     .footer__logo {
         width: 50px;
-        padding-right: 5px;
+        @include padding(0 5px 0 0);
     }
 
     #h3Footer {
-        font-size: 2.5rem;
+        @include font-size(2.5rem);
         font-weight: 600;
     }
 }
