@@ -65,6 +65,10 @@ main {
   background-color: #1e1b50;
 }
 
+.margenes-filaNoticias {
+  margin: 5px 0 5px 0;
+}
+
 /* CSS ACERCA DE MI */
 #grid__section__acerca {
   grid-area: sectionAcerca;
@@ -126,13 +130,6 @@ footer ul {
 footer li {
   list-style-type: none;
   padding-right: 2px;
-}
-
-#h3Footer {
-  font-size: 2rem;
-  font-weight: 600;
-  text-decoration: none;
-  color: #c8f1ff;
 }
 
 /* Media Queries */
@@ -209,6 +206,9 @@ footer li {
     grid-template-areas: "header" "sectionContacto" "footer";
     grid-row-gap: 10px;
     height: 100vh;
+  }
+  #grid__section__contacto h3 {
+    text-align: center;
   }
   /* CSS +320 PATREON */
   #bodygrid__Patreon {
@@ -312,7 +312,7 @@ footer li {
   }
   /* CSS +320 FOOTER */
   .footerLogo {
-    width: 45px;
+    width: 25px;
   }
   .footer__logo {
     width: 15px;
@@ -397,6 +397,9 @@ footer li {
   form {
     width: 75%;
     margin: auto;
+  }
+  #grid__section__contacto h3 {
+    text-align: center;
   }
   .botones {
     background-color: #1e1b50;
@@ -508,10 +511,10 @@ footer li {
   }
   /* CSS +768 FOOTER */
   .footerLogo {
-    width: 75px;
+    width: 50px;
   }
   .footer__logo {
-    width: 50px;
+    width: 40px;
   }
   #h3Footer {
     font-size: 1.5rem;
@@ -555,7 +558,7 @@ footer li {
     margin-left: 15px;
   }
   #grid__section__acerca-2 h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   #grid__section__acerca-2 h3 {
     font-size: 2rem;
@@ -574,6 +577,10 @@ footer li {
   form {
     width: 65%;
     font-size: 1.5rem;
+  }
+  #grid__section__contacto h3 {
+    font-size: 2.5rem;
+    text-align: center;
   }
   .botones:hover {
     background-color: #c8f1ff;
@@ -704,14 +711,14 @@ footer li {
     transition-duration: 0.3s;
   }
   .footerLogo {
-    width: 100px;
+    width: 65px;
   }
   .footer__logo {
     width: 50px;
     padding: 0 5px 0 0;
   }
   #h3Footer {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
   }
 }

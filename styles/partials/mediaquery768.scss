@@ -103,6 +103,10 @@
         @include margin(auto);
     }
 
+    #grid__section__contacto h3 {
+        text-align: center;
+    }
+
     .botones {
         background-color: $color-principal-violetaOscuro;
         color: $color-principal-celeste;
@@ -246,11 +250,11 @@
     @extend .grid__footer;
     
     .footerLogo {
-        width: 75px;
+        width: 50px;
     }
 
     .footer__logo {
-        width: 50px;
+        width: 40px;
     }
 
     #h3Footer {

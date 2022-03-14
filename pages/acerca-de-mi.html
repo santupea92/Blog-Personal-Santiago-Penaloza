@@ -25,19 +25,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body id="bodyGrid__Acerca">
     <!--Comienzo Header-->
     <header class="grid__header">
-        <a href="../index.html"><img src="../assets/img/SANTUPEA_HEADER_2.png" alt="logo header" width="100%"></a>
+        <a href="../index.html"><img src="../assets/img/SANTUPEA_HEADER_2.png" alt="logo header" width="100%" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"></a>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbarId">
           <div class="container-fluid">
               <div class="d-flex flex-grow-1">
-                  <span class="w-100 d-lg-none d-block">
+                  <span class="d-lg-none d-block">
                       <!-- hidden spacer to center brand on mobile --></span>
-                  <a class="navbar-brand nav-font-size" href="#" id="navMenu">Menú</a>
-                  <div class="w-100 text-right">
+                  <a class="navbar-brand nav-font-size" href="#" id="navMenu"></a>
+                  <div class="text-right">
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
                           <span class="navbar-toggler-icon"></span>
                       </button>
@@ -52,13 +59,13 @@
                           <a href="acerca-de-mi.html" class="nav-link">Acerca</a>
                       </li>
                       <li class="nav-item nav-font-size active">
-                          <a href="contacto.html" class="nav-link">Contacto</a>
-                      </li>
-                      <li class="nav-item nav-font-size active">
                           <a href="patreon.html" class="nav-link">Patreon</a>
                       </li>
                       <li class="nav-item nav-font-size active">
                         <a href="torneos.html" class="nav-link">Torneos</a>
+                    </li>
+                    <li class="nav-item nav-font-size active">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
                     </li>
                   </ul>
               </div>
@@ -98,5 +105,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- Animaciones -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

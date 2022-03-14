@@ -27,10 +27,3 @@ footer {
         padding-right: 2px;
     }
 }
-
-#h3Footer {
-    @include font-size (2rem);
-    font-weight: 600;
-    text-decoration: none;
-    color: $color-principal-celeste;
-}
