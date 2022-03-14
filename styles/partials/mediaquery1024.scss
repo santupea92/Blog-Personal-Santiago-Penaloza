@@ -44,7 +44,7 @@
         margin-left: 15px;
 
         h2 {
-            @include font-size(4rem);
+            @include font-size(3rem);
         }
 
         h3 {
@@ -72,6 +72,11 @@
     form {
         width: 65%;
         @include font-size(1.5rem);
+    }
+
+    #grid__section__contacto h3 {
+        font-size: 2.5rem;
+        text-align: center;
     }
 
     .botones:hover {
@@ -244,7 +249,7 @@
     }
 
     .footerLogo {
-        width: 100px;
+        width: 65px;
     }
 
     .footer__logo {
@@ -253,7 +258,7 @@
     }
 
     #h3Footer {
-        @include font-size(2.5rem);
+        @include font-size(2rem);
         font-weight: 600;
     }
 }

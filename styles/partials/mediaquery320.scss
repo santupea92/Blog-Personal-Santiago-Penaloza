@@ -101,6 +101,11 @@
         height: 100vh;
     }
 
+    #grid__section__contacto h3 {
+        text-align: center;
+    }
+
+
     /* CSS +320 PATREON */
 
     #bodygrid__Patreon {
@@ -236,7 +241,7 @@
     @extend .grid__footer;
     
     .footerLogo {
-        width: 45px;
+        width: 25px;
     }
 
     .footer__logo {
